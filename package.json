@@ -2,9 +2,8 @@
   "name": "vrcveldanda",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss resources/css/style-index.css"
+    "compile:sass": "node-sass resources/sass/pages/index.scss  resources/css/index.css"
   },
   "repository": {
     "type": "git",
@@ -15,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/syedzubairahmed001/vrcveldanda/issues"
   },
-  "dependencies": {
-    "sass": "^1.17.0"
+  "devDependencies": {
+    "node-sass": "^4.11.0"
   }
 }
