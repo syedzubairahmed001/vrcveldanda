@@ -1,0 +1,33 @@
+.circle{
+    border-radius: 50%;
+    position: relative;
+
+    &__big{
+        width: 25rem;
+        height: 25rem;
+    }
+
+    &__img{
+        display: inline-block;
+
+        & img{
+            z-index: 20;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+
+            &::before{
+                content: '';
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-image: linear-gradient(rgba(54, 209, 220, 0.7), rgba(91, 135, 229, 0.7));
+                z-index: 30;
+            }
+        }
+    }
+}
