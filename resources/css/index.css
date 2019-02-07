@@ -24,7 +24,8 @@ html {
   left: 0;
   display: block;
   width: 100%;
-  z-index: 999; }
+  z-index: 999;
+  background-color: #fff; }
   .nav__sec-logo {
     text-align: left;
     float: left;
@@ -76,26 +77,53 @@ html {
   border-radius: 50%;
   position: relative; }
   .circle__big {
-    width: 25rem;
-    height: 25rem; }
+    width: 40rem;
+    height: 40rem; }
   .circle__img {
-    display: inline-block; }
+    display: inline-block;
+    position: relative; }
     .circle__img img {
-      z-index: 20;
       display: inline-block;
       width: 100%;
       height: 100%;
       border-radius: 50%; }
-      .circle__img img::before {
-        content: '';
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: linear-gradient(rgba(54, 209, 220, 0.7), rgba(91, 135, 229, 0.7));
-        z-index: 30; }
+    .circle__img .circle-overlay {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%; }
+
+.header-circle-container {
+  display: inline-block;
+  position: relative;
+  margin-top: -20rem;
+  margin-left: -15rem; }
+  .header-circle-container .circle .circle-overlay {
+    background-image: linear-gradient(rgba(54, 209, 220, 0.5), rgba(91, 135, 229, 0.5));
+    box-shadow: rgba(91, 135, 229, 0.7) 0 0 4rem; }
+  .header-circle-container::after {
+    content: '';
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -2rem;
+    right: -5rem;
+    background-image: linear-gradient(to right bottom, rgba(255, 95, 108, 0.8), rgba(255, 196, 113, 0.8));
+    box-shadow: #ffc3a0 0 0 3rem; }
+  .header-circle-container::before {
+    content: '';
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -8rem;
+    left: 20rem;
+    background-image: linear-gradient(to right bottom, #84fab0, #8fd3f4);
+    box-shadow: #ffc3a0 0 0 3rem; }
 
 body {
   padding-bottom: 1000px; }
@@ -109,7 +137,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -80%);
+    transform: translate(-50%, -75%);
     width: 90%; }
     .header__main--h1 {
       font-size: 7rem;
