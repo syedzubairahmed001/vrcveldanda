@@ -76,7 +76,7 @@ html {
 .circle {
   border-radius: 50%;
   position: relative; }
-  .circle__big {
+  .circle__big-40 {
     width: 40rem;
     height: 40rem; }
   .circle__img {
@@ -103,7 +103,7 @@ html {
   margin-left: -15rem; }
   .header-circle-container .circle .circle-overlay {
     background-image: linear-gradient(rgba(54, 209, 220, 0.5), rgba(91, 135, 229, 0.5));
-    box-shadow: rgba(91, 135, 229, 0.7) 0 0 4rem; }
+    box-shadow: #8fd3f4 0 0 4rem; }
   .header-circle-container::after {
     content: '';
     width: 8rem;
@@ -113,7 +113,8 @@ html {
     top: -2rem;
     right: -5rem;
     background-image: linear-gradient(to right bottom, rgba(255, 95, 108, 0.8), rgba(255, 196, 113, 0.8));
-    box-shadow: #ffc3a0 0 0 3rem; }
+    box-shadow: #ffc3a0 0 0 3rem;
+    animation: 3.5s h-circle-2 alternate infinite; }
   .header-circle-container::before {
     content: '';
     width: 5rem;
@@ -123,15 +124,15 @@ html {
     top: -8rem;
     left: 20rem;
     background-image: linear-gradient(to right bottom, #84fab0, #8fd3f4);
-    box-shadow: #ffc3a0 0 0 3rem; }
+    box-shadow: #84fab0 0 0 2rem;
+    animation: 2s h-circle-1 alternate infinite; }
 
 body {
   padding-bottom: 1000px; }
 
 .header {
   position: relative;
-  height: 100vh;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  height: 100vh; }
   .header__main {
     text-align: center;
     position: absolute;
@@ -143,7 +144,8 @@ body {
       font-size: 7rem;
       letter-spacing: 6px;
       font-weight: 900;
-      margin: 0; }
+      margin: 0;
+      text-shadow: #fff 0 0 2rem; }
     .header__main--h2 {
       font-size: 3rem;
       letter-spacing: 1rem;
@@ -151,4 +153,10 @@ body {
       font-weight: 300;
       margin-top: -2rem;
       word-spacing: 1.2rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      text-shadow: #fff 0 0 2rem; }
+
+#particle-js {
+  width: 100%;
+  height: 100vh;
+  background-color: #000; }
