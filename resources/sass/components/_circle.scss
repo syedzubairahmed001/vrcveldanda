@@ -1,10 +1,12 @@
+@import "../includes/animations";
+
 // common cirlce
 
 .circle{
     border-radius: 50%;
     position: relative;
 
-    &__big{
+    &__big-40{
         width: 40rem;
         height: 40rem;
     }
@@ -42,7 +44,7 @@
 
     & .circle .circle-overlay{
         background-image: linear-gradient(rgba(54, 209, 220, 0.5), rgba(91, 135, 229, 0.5));
-        box-shadow: rgba(91, 135, 229, 0.7) 0 0 4rem;
+        box-shadow: #8fd3f4 0 0 4rem;
     }
 
     &::after{
@@ -55,6 +57,7 @@
         right: -5rem;
         background-image: linear-gradient(to right bottom,rgba(255, 95, 108, 0.8), rgba(255, 196, 113, 0.8));
         box-shadow: #ffc3a0 0 0 3rem;
+        animation: 3.5s h-circle-2 alternate infinite;
     }
 
     &::before{
@@ -66,6 +69,7 @@
         top: -8rem;
         left: 20rem;
         background-image: linear-gradient(to right bottom,#84fab0, #8fd3f4);
-        box-shadow: #ffc3a0 0 0 3rem;
+        box-shadow: #84fab0 0 0 2rem;
+        animation: 2s h-circle-1 alternate infinite;
     }
 }
