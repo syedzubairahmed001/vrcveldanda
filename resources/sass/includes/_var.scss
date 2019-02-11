@@ -6,8 +6,8 @@
 
 
 
-$color-primary: #1f77fa;
-$color-secondary: #373a46;
+$color-primary: #66a6ff;
+$color-dark: #373a46;
 $color-tertiary:#dbdde0;
 
 
@@ -24,8 +24,15 @@ $color-tertiary:#dbdde0;
 
 
 
-//gr-1 #89f7fe --> #66a6ff
+//  #89f7fe  #66a6ff
 //gr-2 #ffc3a0 --> #ffafbd
-//gr-3 #84fab0 --> #8fd3f4
 
-//GR 4 #36D1DC --> #5B86E5
+$gr-green-1: #84fab0;
+$gr-green-2: #8fd3f4;
+
+$gr-blue-1: #36D1DC;
+$gr-blue-2: #5B86E5;
+
+$gr-orange-1: rgba(255, 95, 108, 0.8);
+$gr-orange-2: rgba(255, 196, 113, 0.8);
+

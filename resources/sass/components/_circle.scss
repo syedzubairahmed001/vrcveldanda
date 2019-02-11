@@ -1,5 +1,5 @@
 @import "../includes/animations";
-
+@import "../includes/var";
 // common cirlce
 
 .circle{
@@ -43,7 +43,7 @@
     margin-left: -15rem;
 
     & .circle .circle-overlay{
-        background-image: linear-gradient(rgba(54, 209, 220, 0.5), rgba(91, 135, 229, 0.5));
+        background-image: linear-gradient(rgba($gr-blue-1, 0.5), rgba($gr-blue-2, 0.5));
         box-shadow: #8fd3f4 0 0 4rem;
     }
 
@@ -55,7 +55,7 @@
         position: absolute;
         top: -2rem;
         right: -5rem;
-        background-image: linear-gradient(to right bottom,rgba(255, 95, 108, 0.8), rgba(255, 196, 113, 0.8));
+        background-image: linear-gradient(to right bottom, $gr-orange-1, $gr-orange-2);
         box-shadow: #ffc3a0 0 0 3rem;
         animation: 3.5s h-circle-2 alternate infinite;
     }
@@ -68,8 +68,8 @@
         position: absolute;
         top: -8rem;
         left: 20rem;
-        background-image: linear-gradient(to right bottom,#84fab0, #8fd3f4);
-        box-shadow: #84fab0 0 0 2rem;
+        background-image: linear-gradient(to right bottom, $gr-green-1, $gr-green-2);
+        box-shadow: $gr-green-1 0 0 2rem;
         animation: 2s h-circle-1 alternate infinite;
     }
 }

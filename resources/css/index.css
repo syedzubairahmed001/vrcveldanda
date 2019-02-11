@@ -26,6 +26,9 @@ html {
   width: 100%;
   z-index: 999;
   background-color: #fff; }
+  .nav.scroll {
+    box-shadow: rgba(55, 58, 70, 0.4) 1rem 0 2rem;
+    background-color: rgba(255, 255, 255, 0.9); }
   .nav__sec-logo {
     text-align: left;
     float: left;
@@ -36,7 +39,9 @@ html {
     .nav__sec-logo-box .logo {
       color: #373a46;
       margin: 0;
-      padding: 2rem; }
+      padding: 2rem;
+      display: inline-block;
+      cursor: pointer; }
   .nav__sec-main {
     float: right;
     margin: 0;
@@ -55,7 +60,18 @@ html {
       margin-right: 1.5rem;
       padding: 2rem 0;
       color: #373a46;
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      transition: all .3s; }
+      .nav__sec-main ul li a:hover {
+        color: #66a6ff; }
+    .nav__sec-main .menu-icon {
+      cursor: pointer;
+      width: 3.5rem;
+      height: auto;
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      display: none; }
 
 @media only screen and (max-width: 37.5em) {
   .nav__sec-main {
@@ -63,8 +79,12 @@ html {
     width: 100%;
     clear: both;
     text-align: center; }
+    .nav__sec-main ul {
+      display: none; }
     .nav__sec-main ul li {
-      display: block; } }
+      display: block; }
+    .nav__sec-main .menu-icon {
+      display: inline-block; } }
 
 .btn {
   text-decoration: none;
@@ -81,6 +101,11 @@ html {
     border-radius: .7rem; }
     .btn__primary:hover, .btn__primary:active {
       box-shadow: rgba(54, 209, 220, 0.5) 0 0.6rem 2rem; }
+
+@media only screen and (max-width: 37.5em) {
+  .btn__primary {
+    padding: 0.6 0.3rem 2.6rem;
+    font-size: 2rem; } }
 
 .circle {
   border-radius: 50%;
@@ -111,7 +136,7 @@ html {
   margin-top: -20rem;
   margin-left: -15rem; }
   .header-circle-container .circle .circle-overlay {
-    background-image: linear-gradient(rgba(54, 209, 220, 0.5), rgba(91, 135, 229, 0.5));
+    background-image: linear-gradient(rgba(54, 209, 220, 0.5), rgba(91, 134, 229, 0.5));
     box-shadow: #8fd3f4 0 0 4rem; }
   .header-circle-container::after {
     content: '';
@@ -172,4 +197,13 @@ body {
 
 #about {
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  margin-top: -20rem; }
+
+@media only screen and (max-width: 37.5em) {
+  .header__main--h1 {
+    font-size: 4.5rem; }
+  .header__main--h2 {
+    font-size: 2rem;
+    letter-spacing: .6rem;
+    word-spacing: .8rem; } }

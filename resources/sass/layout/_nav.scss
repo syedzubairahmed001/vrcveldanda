@@ -9,6 +9,11 @@
     z-index: 999;
     background-color: #fff;
 
+    &.scroll{
+        box-shadow: rgba(55, 58, 70, 0.4) 1rem 0 2rem;
+        background-color:rgba(255, 255, 255, 0.9);
+    }
+
     &__sec-logo{
         text-align: left;
         float: left;
@@ -18,9 +23,11 @@
         padding-left: 3rem;
 
         &-box .logo{
-            color: $color-secondary;
+            color: $color-dark;
             margin: 0;
             padding: 2rem;
+            display: inline-block;
+            cursor: pointer;
         }
     }
 
@@ -45,8 +52,22 @@
             display: inline-block;
             margin-right: 1.5rem;
             padding: 2rem 0;
-            color: $color-secondary;
+            color: $color-dark;
             text-transform: capitalize;
+            transition: all .3s;
+
+            &:hover{
+                color: $color-primary;
+            }
+        }
+        .menu-icon {
+            cursor: pointer;
+            width: 3.5rem;
+            height: auto;
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            display: none;
         }
     }
 }
@@ -57,15 +78,22 @@
 
 @media only screen and (max-width: 37.5em){
     .nav{
-
         &__sec-main{
             display: block;
             width: 100%;
             clear: both;
             text-align: center;
 
+            & ul{
+                display: none;
+            }
+
             & ul li{
                 display: block;
+            }
+
+            .menu-icon{
+                display: inline-block;
             }
         }
     }
