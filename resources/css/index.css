@@ -16,7 +16,8 @@ body {
     box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: transparent; }
 
 .nav {
   position: fixed;
@@ -160,6 +161,17 @@ html {
     background-image: linear-gradient(to right bottom, #84fab0, #8fd3f4);
     box-shadow: #84fab0 0 0 2rem;
     animation: 2s h-circle-1 alternate infinite; }
+
+@media only screen and (max-width: 37.5em) {
+  .circle__big-40 {
+    width: 20rem;
+    height: 20rem; }
+  .header-circle-container::after {
+    width: 6rem;
+    height: 6rem; }
+  .header-circle-container::before {
+    width: 3.5rem;
+    height: 3.5rem; } }
 
 body {
   padding-bottom: 1000px; }

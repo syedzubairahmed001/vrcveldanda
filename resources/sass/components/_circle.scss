@@ -73,3 +73,25 @@
         animation: 2s h-circle-1 alternate infinite;
     }
 }
+
+
+
+@media only screen and (max-width: 37.5em){
+    .circle{
+        &__big-40{
+            width: 30rem;
+            height: 30rem;
+        }
+    }
+    .header-circle-container{
+
+        &::after{
+            width: 6rem;
+            height: 6rem;
+        }
+        &::before{
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+}
