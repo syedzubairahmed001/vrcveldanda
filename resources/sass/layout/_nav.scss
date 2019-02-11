@@ -37,16 +37,36 @@
             padding: 0;
         }
 
-        ul li{
+        & ul li{
             list-style-type: none;
             display: inline-block;
         }
-        ul li a{
+        & ul li a{
             display: inline-block;
             margin-right: 1.5rem;
             padding: 2rem 0;
             color: $color-secondary;
             text-transform: capitalize;
+        }
+    }
+}
+
+//_______________________ responsive ___________________________
+
+//phone
+
+@media only screen and (max-width: 37.5em){
+    .nav{
+
+        &__sec-main{
+            display: block;
+            width: 100%;
+            clear: both;
+            text-align: center;
+
+            & ul li{
+                display: block;
+            }
         }
     }
 }
