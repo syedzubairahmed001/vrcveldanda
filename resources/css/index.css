@@ -75,6 +75,8 @@ html {
       display: none; }
 
 @media only screen and (max-width: 37.5em) {
+  .nav__sec-logo-box .logo {
+    padding: 1rem; }
   .nav__sec-main {
     display: block;
     width: 100%;
@@ -213,11 +215,13 @@ body {
   margin-top: -20rem; }
 
 @media only screen and (max-width: 37.5em) {
-  .header__main--h1 {
-    font-size: 3.5rem;
-    letter-spacing: .1rem; }
-  .header__main--h2 {
-    font-size: 2rem;
-    letter-spacing: .3rem;
-    word-spacing: .5rem;
-    margin-top: 0rem; } }
+  .header__main {
+    transform: translate(-50%, -60%); }
+    .header__main--h1 {
+      font-size: 3.5rem;
+      letter-spacing: .1rem; }
+    .header__main--h2 {
+      font-size: 2rem;
+      letter-spacing: .3rem;
+      word-spacing: .5rem;
+      margin-top: 0rem; } }

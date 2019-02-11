@@ -78,6 +78,12 @@
 
 @media only screen and (max-width: 37.5em){
     .nav{
+        &__sec-logo-box{
+            & .logo{
+                padding: 1rem;
+            }
+        }
+
         &__sec-main{
             display: block;
             width: 100%;
