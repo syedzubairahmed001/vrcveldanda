@@ -119,8 +119,8 @@ html {
     position: relative; }
     .circle__img img {
       display: inline-block;
-      width: 100%;
-      height: 100%;
+      width: 40rem;
+      height: 40rem;
       border-radius: 50%; }
     .circle__img .circle-overlay {
       display: inline-block;
@@ -163,9 +163,9 @@ html {
     animation: 2s h-circle-1 alternate infinite; }
 
 @media only screen and (max-width: 37.5em) {
-  .circle__big-40 {
-    width: 20rem;
-    height: 20rem; }
+  .head-circle-img {
+    width: 30rem;
+    height: 30rem; }
   .header-circle-container::after {
     width: 6rem;
     height: 6rem; }
@@ -214,8 +214,9 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .header__main--h1 {
-    font-size: 4.5rem; }
+    font-size: 3.5rem;
+    letter-spacing: .1rem; }
   .header__main--h2 {
     font-size: 2rem;
-    letter-spacing: .6rem;
-    word-spacing: .8rem; } }
+    letter-spacing: .3rem;
+    word-spacing: .5rem; } }
