@@ -107,7 +107,7 @@ html {
 
 @media only screen and (max-width: 37.5em) {
   .btn__primary {
-    padding: 0.6 0.3rem 2.6rem;
+    padding: .4rem 1.5rem;
     font-size: 2rem; } }
 
 .circle {
