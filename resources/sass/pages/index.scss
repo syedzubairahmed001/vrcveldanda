@@ -69,7 +69,7 @@ body{
     .header{
 
         &__main{
-
+            transform: translate(-50%, -60%);
             &--h1{
                 font-size: 3.5rem;
                 letter-spacing: .1rem;
@@ -78,6 +78,7 @@ body{
                 font-size: 2rem;
                 letter-spacing: .3rem;
                 word-spacing: .5rem;
+                margin-top: 0rem;
             }
         }
     }
