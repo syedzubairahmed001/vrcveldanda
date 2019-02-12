@@ -28,7 +28,7 @@ html {
   z-index: 999;
   background-color: #fff; }
   .nav.scroll {
-    box-shadow: rgba(55, 58, 70, 0.4) 1rem 0 2rem;
+    box-shadow: rgba(55, 58, 70, 0.4) 0 0 3rem;
     background-color: rgba(255, 255, 255, 0.9); }
   .nav__sec-logo {
     text-align: left;
@@ -85,7 +85,13 @@ html {
     .nav__sec-main ul {
       display: none; }
     .nav__sec-main ul li {
-      display: block; }
+      display: block;
+      width: 100%;
+      text-align: center;
+      clear: both; }
+    .nav__sec-main ul li a {
+      display: block;
+      width: 100%; }
     .nav__sec-main .menu-icon {
       display: inline-block; } }
 
@@ -102,8 +108,14 @@ html {
     color: #fff;
     font-size: 2.2rem;
     border-radius: .7rem; }
-    .btn__primary:hover, .btn__primary:active {
+    .btn__primary:hover {
       box-shadow: rgba(54, 209, 220, 0.5) 0 0.6rem 2rem; }
+    .btn__primary:active {
+      border: 2px solid #5B86E5;
+      background: #fff;
+      color: #5B86E5;
+      box-shadow: rgba(91, 134, 229, 0.5) 0 0.6rem 2rem;
+      margin-top: -4px; }
 
 @media only screen and (max-width: 37.5em) {
   .btn__primary {
@@ -114,33 +126,22 @@ html {
   border-radius: 50%;
   position: relative; }
   .circle__big-40 {
-    width: 40rem;
-    height: 40rem; }
+    width: 45rem;
+    height: 45rem; }
   .circle__img {
     display: inline-block;
-    position: relative; }
-    .circle__img img {
-      display: inline-block;
-      width: 40rem;
-      height: 40rem;
-      border-radius: 50%; }
-    .circle__img .circle-overlay {
-      display: inline-block;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      border-radius: 50%; }
+    position: relative;
+    background-image: linear-gradient(rgba(54, 209, 220, 0.5), rgba(91, 134, 229, 0.5)), url(img/header-img.jpg);
+    box-shadow: rgba(54, 209, 220, 0.8) 0 0 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
 
 .header-circle-container {
   display: inline-block;
   position: relative;
-  margin-top: -20rem;
+  margin-top: -25rem;
   margin-left: -15rem; }
-  .header-circle-container .circle .circle-overlay {
-    background-image: linear-gradient(rgba(54, 209, 220, 0.5), rgba(91, 134, 229, 0.5));
-    box-shadow: #8fd3f4 0 0 4rem; }
   .header-circle-container::after {
     content: '';
     width: 8rem;
@@ -150,8 +151,7 @@ html {
     top: -2rem;
     right: -5rem;
     background-image: linear-gradient(to right bottom, rgba(255, 95, 108, 0.8), rgba(255, 196, 113, 0.8));
-    box-shadow: #ffc3a0 0 0 3rem;
-    animation: 3.5s h-circle-2 alternate infinite; }
+    box-shadow: #ffc3a0 0 0 3rem; }
   .header-circle-container::before {
     content: '';
     width: 5rem;
@@ -159,21 +159,24 @@ html {
     border-radius: 50%;
     position: absolute;
     top: -8rem;
-    left: 20rem;
+    left: 22rem;
     background-image: linear-gradient(to right bottom, #84fab0, #8fd3f4);
-    box-shadow: #84fab0 0 0 2rem;
-    animation: 2s h-circle-1 alternate infinite; }
+    box-shadow: #84fab0 0 0 2rem; }
 
 @media only screen and (max-width: 37.5em) {
-  .head-circle-img {
-    width: 30rem;
-    height: 30rem; }
-  .header-circle-container::after {
-    width: 6rem;
-    height: 6rem; }
-  .header-circle-container::before {
-    width: 3.5rem;
-    height: 3.5rem; } }
+  .circle__big-40 {
+    width: 25rem;
+    height: 25rem; }
+  .header-circle-container {
+    margin-top: -15rem;
+    margin-left: -8rem; }
+    .header-circle-container::after {
+      width: 6rem;
+      height: 6rem; }
+    .header-circle-container::before {
+      width: 3.5rem;
+      height: 3.5rem;
+      left: 15rem; } }
 
 body {
   padding-bottom: 1000px; }

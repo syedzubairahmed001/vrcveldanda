@@ -10,7 +10,7 @@
     background-color: #fff;
 
     &.scroll{
-        box-shadow: rgba(55, 58, 70, 0.4) 1rem 0 2rem;
+        box-shadow: rgba(55, 58, 70, 0.4) 0 0 3rem;
         background-color:rgba(255, 255, 255, 0.9);
     }
 
@@ -96,6 +96,14 @@
 
             & ul li{
                 display: block;
+                width: 100%;
+                text-align: center;
+                clear: both;
+            }
+
+            & ul li a{
+                display: block;
+                width: 100%;
             }
 
             .menu-icon{

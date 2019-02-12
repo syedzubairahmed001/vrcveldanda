@@ -7,30 +7,18 @@
     position: relative;
 
     &__big-40{
-        width: 40rem;
-        height: 40rem;
+        width: 45rem;
+        height: 45rem;
     }
 
     &__img{
         display: inline-block;
         position: relative;
-
-        & img{
-            display: inline-block;
-            width: 40rem;
-            height: 40rem;
-            border-radius: 50%;
-        }
-
-        & .circle-overlay{
-            display: inline-block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            border-radius: 50%;
-        }
+        background-image:linear-gradient(rgba($gr-blue-1, 0.5), rgba($gr-blue-2, 0.5)), url(img/header-img.jpg);
+        box-shadow: rgba($gr-blue-1, 0.8) 0 0 2rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }
 
@@ -39,13 +27,8 @@
 .header-circle-container{
     display: inline-block;
     position: relative;
-    margin-top: -20rem;
+    margin-top: -25rem;
     margin-left: -15rem;
-
-    & .circle .circle-overlay{
-        background-image: linear-gradient(rgba($gr-blue-1, 0.5), rgba($gr-blue-2, 0.5));
-        box-shadow: #8fd3f4 0 0 4rem;
-    }
 
     &::after{
         content: '';
@@ -57,7 +40,6 @@
         right: -5rem;
         background-image: linear-gradient(to right bottom, $gr-orange-1, $gr-orange-2);
         box-shadow: #ffc3a0 0 0 3rem;
-        animation: 3.5s h-circle-2 alternate infinite;
     }
 
     &::before{
@@ -67,22 +49,25 @@
         border-radius: 50%;
         position: absolute;
         top: -8rem;
-        left: 20rem;
+        left: 22rem;
         background-image: linear-gradient(to right bottom, $gr-green-1, $gr-green-2);
         box-shadow: $gr-green-1 0 0 2rem;
-        animation: 2s h-circle-1 alternate infinite;
     }
 }
 
 
 
 @media only screen and (max-width: 37.5em){
-    .head-circle-img{
-            width: 30rem;
-            height: 30rem;
+    .circle{
+        &__big-40{
+            width: 25rem;
+            height: 25rem;
         }
+    }
     .header-circle-container{
 
+        margin-top: -15rem;
+        margin-left: -8rem;
         &::after{
             width: 6rem;
             height: 6rem;
@@ -90,6 +75,7 @@
         &::before{
             width: 3.5rem;
             height: 3.5rem;
+            left: 15rem;
         }
     }
 }
