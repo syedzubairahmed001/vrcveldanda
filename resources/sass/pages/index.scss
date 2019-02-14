@@ -6,6 +6,11 @@
 body{
     padding-bottom: 1000px;
 }
+#particle-js{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
 // .header-img{
 //     position: absolute;
 //     top: 0;
@@ -49,18 +54,64 @@ body{
     }
 }
 
-#particle-js{
+
+
+
+
+
+
+
+.sec{
     width: 100%;
-    height: 100vh;
-    background-color: #000;
 }
 
 
-#about{
-    width: 100%;
-    height: 100vh;
-    margin-top: -20rem;
+
+
+// _________________________section about_____________________
+
+.sec-about{
+    margin-top: -15rem;
+
+    &__main{
+        -webkit-clip-path: polygon(17% 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(17% 0, 100% 0, 100% 100%, 0 100%);
+        background-image: linear-gradient(to bottom right, $gr-orange-1,$gr-orange-2);
+        width: 100%;
+        padding: 2rem;
+        box-shadow: $gr-orange-1 0 0 4rem;
+        margin: 5rem 0;
+
+        &__head{
+            text-align: center;
+            font-size: 5rem;
+            margin: 0;
+            color: #fff;
+        }
+        &__desc{
+            color: #fff;
+            margin-left: 18rem;
+            margin-right: 3rem;
+            font-size: 2rem;
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // //_______________________ responsive ___________________________
 
 // //phone
@@ -71,16 +122,19 @@ body{
         &__main{
             transform: translate(-50%, -60%);
             &--h1{
-                font-size: 3.5rem;
+                font-size: 4.5rem;
                 letter-spacing: .1rem;
             }
             &--h2{
-                font-size: 2rem;
+                font-size: 2.5rem;
                 letter-spacing: .3rem;
                 word-spacing: .5rem;
-                margin-top: 0rem;
+                margin-top: -.1rem;
             }
         }
+    }
+    .sec-about{
+        margin-top: -20rem;
     }
 }
 

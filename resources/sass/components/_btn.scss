@@ -20,7 +20,7 @@
         }
         &:active{
             border: 2px solid #5B86E5;
-            background: #fff;
+            background: #fbfbfb;
             color: #5B86E5;
             box-shadow: rgba(#5B86E5, 0.5) 0 .6rem 2rem;
             margin-top: -4px;
@@ -31,7 +31,7 @@
 @media only screen and (max-width: 37.5em){
     .btn{
         &__primary{
-            padding: .4rem 1.5rem;
+            padding: .6rem 2rem;
             font-size: 2rem;
         }
     }
